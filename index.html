@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,7 @@
   <header id="siteHeader" class="site-header">
     <div class="container header-inner">
       <a href="#" class="logo">Trent <span>Management</span></a>
+      
       <nav class="nav-desktop">
         <a href="#services" class="nav-link">Services</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
@@ -23,14 +24,18 @@
         <a href="#testimonials" class="nav-link">Testimonials</a>
         <a href="#contact" class="nav-link nav-cta">Get Started</a>
       </nav>
+      
       <div class="header-controls">
         <button data-theme-toggle class="theme-toggle" aria-label="Toggle dark mode">&#9790;</button>
         <button id="navHamburger" class="hamburger" aria-expanded="false" aria-label="Open menu">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
-    <!-- MOBILE NAV -->
+    
+    <!-- MOBILE NAV (moved inside header) -->
     <nav id="navMobile" class="nav-mobile">
       <a href="#services" class="nav-mobile-link">Services</a>
       <a href="#how-it-works" class="nav-mobile-link">How It Works</a>
@@ -197,22 +202,24 @@
       <!-- COMPARE TABLE -->
       <div class="compare-wrap">
         <h3 class="compare-title">Trent Management vs. Self-Managing</h3>
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Task</th>
-              <th>Self-Managed</th>
-              <th>Trent Management</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Tenant Screening</td><td>Time-consuming &amp; risky</td><td>&#10003; Thorough &amp; fast</td></tr>
-            <tr><td>Rent Collection</td><td>Manual follow-ups</td><td>&#10003; Automated</td></tr>
-            <tr><td>Maintenance</td><td>On-call 24/7 yourself</td><td>&#10003; We handle it</td></tr>
-            <tr><td>Legal Compliance</td><td>Research on your own</td><td>&#10003; Always current</td></tr>
-            <tr><td>Financial Reports</td><td>DIY spreadsheets</td><td>&#10003; Monthly statements</td></tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Self-Managed</th>
+                <th>Trent Management</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Tenant Screening</td><td>Time-consuming &amp; risky</td><td>&#10003; Thorough &amp; fast</td></tr>
+              <tr><td>Rent Collection</td><td>Manual follow-ups</td><td>&#10003; Automated</td></tr>
+              <tr><td>Maintenance</td><td>On-call 24/7 yourself</td><td>&#10003; We handle it</td></tr>
+              <tr><td>Legal Compliance</td><td>Research on your own</td><td>&#10003; Always current</td></tr>
+              <tr><td>Financial Reports</td><td>DIY spreadsheets</td><td>&#10003; Monthly statements</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
